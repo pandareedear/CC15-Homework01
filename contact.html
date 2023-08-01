@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        
+        select {
+            width: 270px;
+            border: 1px solid;
+            
+        }
+
+        /* label, textarea, p, input[type=submit],
+        text {
+            margin-left: 40px;
+        } */
+
+        .row {
+            border: 1px solid black;
+            width: 350px;
+            border-radius: 15px;
+            margin: 20px;
+            height: auto;
+            padding: 20px;
+            padding-left: 40px;
+
+        }
+         .Name, .Email, textarea {
+            width: 270px;
+         }
+    
+    </style>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"> Home </a> |
+            <a href="education.html">Education</a> |
+            <a href="work.html">Work Experience</a> |
+            <a href="contact.html">Contact Me</a> |
+        </nav>
+    </header>
+    <hr>
+    <h1>Contact Me</h1>
+    <main>
+        <div class="row">
+            <form>
+                <p>Enter your info..</p>
+
+                <label>
+                    Your Name
+                    <br>
+                    <input class="Name" type="text"><br>
+                </label>
+
+                <br>
+                <label>
+                    Your E-mail
+                    <br>
+                    <input class="Email" type="email"><br>
+                </label>
+                <br>
+                <label>
+                    Gender
+                    <br>
+                    <select name="gender">
+                        <option value="">select..</option>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select>
+                </label>
+                <br>
+                <br>
+                <label>
+                    Message
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                </label>
+                <br>
+                <br>
+           
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Clear">                
+                 <br>
+                 <br>
+
+            </form>
+
+
+        </div>
+
+    </main>
+</body>
+
+</html>
